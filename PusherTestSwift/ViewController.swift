@@ -17,7 +17,6 @@ class ViewController: UIViewController, PTPusherDelegate {
     @IBOutlet weak var lbl: UILabel!
     @IBOutlet weak var input: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,12 +28,15 @@ class ViewController: UIViewController, PTPusherDelegate {
         
         self.channel = self.client!.subscribeToChannelNamed("50")
         self.channel.bindToEventNamed("testEvent", handleWithBlock: { (response) -> Void in
-            println(response.data)
+            println("response: \(response)")
             self.lbl.text = response.data["message"] as? String
         })
+        
+        
     }
 
     func send(){
+        
         self.api.triggerEvent("testEvent", onChannel: "50", data: ["message": self.input.text], socketID: nil)
         self.input.text = ""
     }
