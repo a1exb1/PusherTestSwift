@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66B2FB6B4B887733DCD0547 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660EF36D004634268D6E9588 /* libPods.a */; };
 		E4F2380E1AA1D4E3005FF5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2380D1AA1D4E3005FF5DB /* AppDelegate.swift */; };
 		E4F238101AA1D4E3005FF5DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2380F1AA1D4E3005FF5DB /* ViewController.swift */; };
 		E4F238131AA1D4E3005FF5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F238111AA1D4E3005FF5DB /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660EF36D004634268D6E9588 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9967577F2E8B1CCF9FD2E4DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E4F238081AA1D4E3005FF5DB /* PusherTestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PusherTestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F2380C1AA1D4E3005FF5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F2380D1AA1D4E3005FF5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		E4F2381D1AA1D4E3005FF5DB /* PusherTestSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PusherTestSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F238221AA1D4E3005FF5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F238231AA1D4E3005FF5DB /* PusherTestSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherTestSwiftTests.swift; sourceTree = "<group>"; };
+		E4F448171AA1D8C500648C36 /* PusherTestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PusherTestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA6494A02971EEE8285FF67D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66B2FB6B4B887733DCD0547 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81C7B4419E6F786995E36A2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA6494A02971EEE8285FF67D /* Pods.debug.xcconfig */,
+				9967577F2E8B1CCF9FD2E4DE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A82DCB8F67DF35D3385556A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				660EF36D004634268D6E9588 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4F237FF1AA1D4E3005FF5DB = {
 			isa = PBXGroup;
 			children = (
 				E4F2380A1AA1D4E3005FF5DB /* PusherTestSwift */,
 				E4F238201AA1D4E3005FF5DB /* PusherTestSwiftTests */,
 				E4F238091AA1D4E3005FF5DB /* Products */,
+				81C7B4419E6F786995E36A2B /* Pods */,
+				A82DCB8F67DF35D3385556A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +102,7 @@
 		E4F2380A1AA1D4E3005FF5DB /* PusherTestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E4F448171AA1D8C500648C36 /* PusherTestSwift-Bridging-Header.h */,
 				E4F2380D1AA1D4E3005FF5DB /* AppDelegate.swift */,
 				E4F2380F1AA1D4E3005FF5DB /* ViewController.swift */,
 				E4F238111AA1D4E3005FF5DB /* Main.storyboard */,
@@ -119,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F238271AA1D4E3005FF5DB /* Build configuration list for PBXNativeTarget "PusherTestSwift" */;
 			buildPhases = (
+				848F3F67EBB40C61BE4354F4 /* Check Pods Manifest.lock */,
 				E4F238041AA1D4E3005FF5DB /* Sources */,
 				E4F238051AA1D4E3005FF5DB /* Frameworks */,
 				E4F238061AA1D4E3005FF5DB /* Resources */,
+				8AA558A3EB4F224D55ED8D61 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		848F3F67EBB40C61BE4354F4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AA558A3EB4F224D55ED8D61 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4F238041AA1D4E3005FF5DB /* Sources */ = {
@@ -336,21 +397,25 @@
 		};
 		E4F238281AA1D4E3005FF5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA6494A02971EEE8285FF67D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PusherTestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PusherTestSwift/PusherTestSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		E4F238291AA1D4E3005FF5DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9967577F2E8B1CCF9FD2E4DE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PusherTestSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PusherTestSwift/PusherTestSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +472,7 @@
 				E4F238291AA1D4E3005FF5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F2382A1AA1D4E3005FF5DB /* Build configuration list for PBXNativeTarget "PusherTestSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +481,7 @@
 				E4F2382C1AA1D4E3005FF5DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
