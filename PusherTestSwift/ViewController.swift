@@ -31,12 +31,9 @@ class ViewController: UIViewController, PTPusherDelegate {
             println("response: \(response)")
             self.lbl.text = response.data["message"] as? String
         })
-        
-        
     }
 
     func send(){
-        
         self.api.triggerEvent("testEvent", onChannel: "50", data: ["message": self.input.text], socketID: nil)
         self.input.text = ""
     }
