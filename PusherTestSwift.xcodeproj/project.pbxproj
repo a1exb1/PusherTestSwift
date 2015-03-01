@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B66B2FB6B4B887733DCD0547 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660EF36D004634268D6E9588 /* libPods.a */; };
+		E48A99E11AA3264800498C66 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48A99E01AA3264800498C66 /* Test2ViewController.swift */; };
 		E4F2380E1AA1D4E3005FF5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2380D1AA1D4E3005FF5DB /* AppDelegate.swift */; };
 		E4F238101AA1D4E3005FF5DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2380F1AA1D4E3005FF5DB /* ViewController.swift */; };
 		E4F238131AA1D4E3005FF5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F238111AA1D4E3005FF5DB /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		660EF36D004634268D6E9588 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9967577F2E8B1CCF9FD2E4DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E48A99E01AA3264800498C66 /* Test2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		E4F238081AA1D4E3005FF5DB /* PusherTestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PusherTestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F2380C1AA1D4E3005FF5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F2380D1AA1D4E3005FF5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E4F238141AA1D4E3005FF5DB /* Images.xcassets */,
 				E4F238161AA1D4E3005FF5DB /* LaunchScreen.xib */,
 				E4F2380B1AA1D4E3005FF5DB /* Supporting Files */,
+				E48A99E01AA3264800498C66 /* Test2ViewController.swift */,
 			);
 			path = PusherTestSwift;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4F238101AA1D4E3005FF5DB /* ViewController.swift in Sources */,
+				E48A99E11AA3264800498C66 /* Test2ViewController.swift in Sources */,
 				E4F2380E1AA1D4E3005FF5DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

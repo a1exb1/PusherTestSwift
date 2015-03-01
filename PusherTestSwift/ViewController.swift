@@ -31,6 +31,14 @@ class ViewController: UIViewController, PTPusherDelegate {
             println("response: \(response)")
             self.lbl.text = response.data["message"] as? String
         })
+        
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var v = Test2ViewController()
+        //self.presentViewController(v, animated:false, completion:nil)
     }
 
     func send(){

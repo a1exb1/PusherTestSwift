@@ -49,6 +49,24 @@
             </objects>
             <point key="canvasLocation" x="1192" y="243"/>
         </scene>
+        <!--Test2 View Controller-->
+        <scene sceneID="frs-DR-oP7">
+            <objects>
+                <viewController id="D0V-uh-9J4" customClass="Test2ViewController" customModule="PusherTestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIU-px-8Fh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pom-Lq-u26"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vEr-ZI-ix6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2R-4I-vEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="-213"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8LC-LQ-VWD">
             <objects>

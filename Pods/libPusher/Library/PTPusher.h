@@ -113,6 +113,7 @@ extern NSString *const PTPusherErrorUnderlyingEventKey;
  For more information on channel authorization, [see the Pusher documentation website](http://pusher.com/docs/authenticating_users).
  */
 @property (nonatomic, strong) NSURL *authorizationURL;
+-(void)setAuthorizationURLFromString:(NSString *)authorizationURLString;
 
 ///------------------------------------------------------------------------------------/
 /// @name Creating new instances

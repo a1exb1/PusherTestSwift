@@ -487,4 +487,8 @@ NSURL *PTPusherConnectionURL(NSString *host, NSString *key, NSString *clientID, 
   });
 }
 
+-(void)setAuthorizationURLFromString:(NSString *)authorizationURLString{
+    self.authorizationURL = [NSURL URLWithString:authorizationURLString];
+}
+
 @end
